@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{%block title%}上传键值映射方案的背景图片{%endblock%}
+{%block main%}
+<h3 align="center">上传键值映射方案的背景图片</h3>
+<form action="{{url_for('upload')}}" method="post" enctype="multipart/form-data"  target="_blank">
+
+ <input name="filename" type="file" value="z.jpg"/>
+
+  <input name="submit" type="submit" value="上传" />
+
+  <input name="uploadtype" type="hidden" value="RECORDKEYADAPTER" />
+
+  <input name="APPPACKAGENAME" type="hidden" value="com.ireadygo.ap.test14" />
+
+  <input name="APPNAME" type="hidden" value="测试未处理方案14" />
+
+  <input name="VERSIONCODE" type="hidden" value="0" />
+
+  <input name="DEVVER" type="hidden" value="I7" />
+
+</form>
+{%endblock%}

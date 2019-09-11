@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%}{%endblock%}-文件服务器</title>
+    {%block head%}{%endblock%}
+</head>
+<body>
+<div style="float:left;height: 800px;">
+<ul>
+    <li>
+        <a href="{{url_for('upload_top')}}">上传至图片目录</a>
+    </li>
+    <li>
+        <a href="{{url_for('upload_keyapdater')}}">上传键值映射方案的背景图片</a>
+    </li>
+    <li>
+        <a href="{{url_for('upload_capacity')}}">上传智能游戏助手APP的工具图片</a>
+    </li>
+    <li>
+        <a href="{{url_for('block_upload')}}">分块上传文件</a>
+    </li>
+    <li>
+        <a href="{{url_for('multi_files')}}">多文件上传</a>
+    </li>
+</ul>
+</div>
+<div style="float:left;margin-left: 100px;">
+{%block main%}{%endblock%}
+</div>
+</body>
+</html>
